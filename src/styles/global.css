@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family:'Kanit',sans-serif; color:#d7e2ea; background:#0c0c0c; font-synthesis:none; text-rendering:optimizeLegibility; }
+* { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; background:#0c0c0c; }
+body,#root { min-height:100%; background:#0c0c0c; }
+body { overflow-x:clip; }
+a { color:inherit; text-decoration:none; }
+button,a { -webkit-tap-highlight-color:transparent; }
+.site-shell { overflow-x:clip; background:#0c0c0c; }
+em { color:#d547e0; font-style:normal; }
+.eyebrow { color:rgba(215,226,234,.55); font-size:.65rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; }
+.eyebrow.light { color:rgba(215,226,234,.58); }
+.section-eyebrow { display:flex; justify-content:space-between; padding-bottom:1.25rem; color:rgba(215,226,234,.5); font-size:.65rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; }
+.section-eyebrow.dark { color:rgba(12,12,12,.5); }
+.section-title { font-size:clamp(3rem,12vw,10rem); font-weight:900; line-height:.86; letter-spacing:-.065em; text-align:center; text-transform:uppercase; }
+
+/* Typography and responsive refinements */
+:root { font-family:'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+.hero-title,
+.section-title,
+.reel-heading h2,
+.about-panel h2,
+.site-footer h2,
+.skill-number { font-family:'Inter', system-ui, sans-serif; font-variation-settings:'wdth' 100; }
+.hero-title { letter-spacing:-.065em; line-height:.86; }
+.section-title,
+.about-panel h2,
+.site-footer h2 { letter-spacing:-.055em; }
+
+img, video, svg { max-width:100%; }
+button, a { touch-action:manipulation; }

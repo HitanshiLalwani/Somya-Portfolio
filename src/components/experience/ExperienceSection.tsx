@@ -1,0 +1,4 @@
+import { FadeIn } from '../common/FadeIn'
+import { experience } from '../../data/portfolio'
+import './ExperienceSection.css'
+export function ExperienceSection() { return <section className="experience-section" id="experience"><div className="section-eyebrow"><span>04 / Experience</span><span>Growing through doing</span></div><FadeIn><h2 className="section-title left">Work<br /><em>in motion.</em></h2></FadeIn><div className="experience-list">{experience.map((item, index) => <FadeIn key={item.role} delay={index * .08}><article className="experience-card"><div className="experience-top"><span>{item.period}</span><span>{item.place}</span></div><h3>{item.role}</h3><p className="company">{item.company}</p><ul>{item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul></article></FadeIn>)}</div></section> }

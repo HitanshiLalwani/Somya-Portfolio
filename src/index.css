@@ -1,0 +1,3 @@
+/* Compatibility entrypoint: shared styles live in src/styles and component CSS is colocated with each component. */
+@import './styles/global.css';
+@import './styles/responsive.css';
